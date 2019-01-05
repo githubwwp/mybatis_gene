@@ -1,6 +1,22 @@
 # mybatis_gene
 mybatis auto generate table entity.
 
+##  修改数据库参数
+- 修改路径 mybatis_gene/src/main/resources/generatorConfig.properties 中对应的参数值即可
+```properties
+dbDriverJar=D\:\\java\\base_file\\mysql-connector-java-5.1.7-bin.jar
+dbDriverClass=com.mysql.jdbc.Driver
+dbUrl=jdbc:mysql://localhost:3306/mybatis_gene
+dbUser=root
+dbPassword=123
+entityTargetPackage=mybatis_gene.entity
+targetProject=./src/main/java
+xmlTargetPackage=mybatis_gene.mapper
+daoTargetPackage=mybatis_gene.dao
+schema=mybatis_gene
+tableName=sys_role
+domainObjectName=SysRole
+```
 
 ##  使用方式
 - 下载项目，导入到myeclipse 中。
